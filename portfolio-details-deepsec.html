@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>DeepSec Details - Zaid Roushdy</title>
+  <meta content="AI-Powered Intrusion Prevention System" name="description">
+  <meta content="DeepSec, IPS, Suricata, XGBoost, Cybersecurity" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/DALL·E 2024-08-27 23.24.09 - A professional and modern logo for a personal portfolio website, focusing on web design and front-end development. The logo should feature a sleek and.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="index.html#certifications"><i class="bi bi-award navicon"></i><span>Certifications</span></a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">DeepSec Details</li>
+          </ol>
+        </nav>
+        <h1>DeepSec Project Details</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+            <!-- Dashboard Image -->
+            <div class="swiper-slide">
+              <img src="assets/img/masonry-portfolio/deepsec-dashboard.png" alt="DeepSec Dashboard">
+            </div>
+
+            <!-- Video Slide -->
+            <div class="swiper-slide">
+              <video controls playsinline poster="assets/img/masonry-portfolio/deepsec-dashboard.png" style="width: 100%; max-height: 600px; object-fit: contain; background-color: #000;">
+                <source src="assets/img/masonry-portfolio/deepsec-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Project: DeepSec - AI-Powered Intrusion Prevention System</h2>
+              <p>
+                DeepSec is an advanced Intrusion Prevention System (IPS) designed to enhance organizational cybersecurity by proactively detecting and preventing cyber threats using machine learning techniques. By analyzing large volumes of network traffic and user behavior, the IPS identifies anomalies and potential attack patterns in real-time, shifting defense strategies from reactive to predictive.
+              </p>
+              
+              <h3>Core Objectives & Features</h3>
+              <ul>
+                <li><strong>Real-Time Packet Inspection:</strong> Implemented Suricata in inline mode integrated with iptables and NFQUEUE for continuous network traffic monitoring and control.</li>
+                <li><strong>AI-Driven Detection:</strong> Integrated an XGBoost machine learning model trained on network flow features to detect and classify unknown attacks, achieving approximately 80% detection accuracy.</li>
+                <li><strong>Automated Threat Response:</strong> The system automatically blocks malicious IPs and drops suspicious sessions in real-time without human intervention, minimizing the window of exposure.</li>
+                <li><strong>Interactive Dashboard:</strong> A user-friendly visual dashboard (built with Flask) that provides security teams with clear insights into security metrics, live alerts, blocked IPs, and AI predictions.</li>
+                <li><strong>Attack Simulation:</strong> Used Scapy and Tcpreplay to simulate network attacks (e.g., port scans, DoS) to test and validate the IPS detection capabilities.</li>
+              </ul>
+
+              <h3>Technical Stack</h3>
+              <p>
+                <strong>Security & Networking:</strong> Suricata, iptables, NFQUEUE, Wireshark, TCP/IP.<br>
+                <strong>Machine Learning & Data:</strong> Python, XGBoost, Pandas, Scikit-learn, Scapy.<br>
+                <strong>Backend & Dashboard:</strong> Flask, HTML, CSS, JavaScript, Bootstrap.
+              </p>
+
+              <h3>System Architecture</h3>
+              <p>
+                The system follows a modular, data-driven architecture consisting of a Data Capture Layer (network traffic), Feature Extraction Layer (preprocessing), Prediction & Classification Layer (XGBoost model), Policy Enforcement Layer (Drop/Block/Alert actions), and a Logging & Reporting Layer. This modularity ensures scalability and low-latency real-time evaluation.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong> Cybersecurity / AI</li>
+                <li><strong>Project Date</strong> 2024 - 2025</li>
+                <li><strong>Type</strong> Academic / Research Project</li>
+                <li><strong>GitHub Repo</strong> <a href="https://github.com/zaidrhs" target="_blank">View Source Code</a></li>
+                <li><a href="https://github.com/zaidrhs" target="_blank" class="btn-visit align-self-start">Visit Repository</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Zaid Roushdy Hegazy</h3>
+      <p>Cybersecurity Engineer | Full Stack Developer</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/zaid-roshdy-hegazy-0b291529b" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/zaidrhs" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://tryhackme.com/p/zaidrhs" target="_blank"><i class="fas fa-terminal"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
