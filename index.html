@@ -27,6 +27,33 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- USP Statement Custom Style -->
+  <style>
+    .hero .usp-statement {
+      display: inline-block;
+      max-width: 720px;
+      margin: 22px auto 28px;
+      padding: 12px 28px;
+      font-size: 17px;
+      line-height: 1.7;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--heading-color);
+      background: color-mix(in srgb, var(--accent-color), transparent 95%);
+      border-left: 3px solid var(--accent-color);
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero .usp-statement {
+        font-size: 14px;
+        padding: 10px 16px;
+        margin: 18px auto 22px;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -41,6 +68,7 @@
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
         <li><a href="#certifications"><i class="bi bi-award navicon"></i><span>Certifications</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#featured-project"><i class="bi bi-star navicon"></i><span>Featured</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
@@ -57,8 +85,14 @@
           <div class="col-lg-9 text-center">
             <h2>Zaid Roushdy Hegazy</h2>
             <p>I'm a <span class="typed" data-typed-items="Cybersecurity Engineer, Full Stack Developer, Penetration Tester, SOC Analyst"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+
+            <!-- USP Statement -->
+            <p class="usp-statement">
+              Building secure, responsive, and user-friendly web experiences by combining web development with cybersecurity.
+            </p>
+
             <div class="social-links">
-              <a href="https://www.linkedin.com/in/zaid-roushdy-hegazy-0b291529b" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/zaid-roushdy-hegazy-0b291529b/" target="_blank"><i class="bi bi-linkedin"></i></a>
               <a href="https://github.com/zaidrhs" target="_blank"><i class="bi bi-github"></i></a>
               <a href="https://tryhackme.com/p/zaidrhs2005" target="_blank"><i class="fas fa-terminal"></i></a>
               <a href="https://www.facebook.com/profile.php?id=100049528389724" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -156,7 +190,7 @@
         <div class="row skills-content skills-animation">
           <div class="col-lg-6">
             <div class="progress">
-              <span class="skill"><span>Penetration Testing & Red Teaming</span> <i class="val">85%</i></span>
+              <span class="skill"><span>Penetration Testing &amp; Red Teaming</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
             <div class="progress">
@@ -164,7 +198,7 @@
               <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
             <div class="progress">
-              <span class="skill"><span>SOC Operations & Incident Response</span> <i class="val">90%</i></span>
+              <span class="skill"><span>SOC Operations &amp; Incident Response</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
             </div>
             <div class="progress">
@@ -236,7 +270,7 @@
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Freelance Cybersecurity Engineer & Developer</h4>
+              <h4>Freelance Cybersecurity Engineer &amp; Developer</h4>
               <h5>2024 - Present</h5>
               <p><em>Self-Directed Projects</em></p>
               <ul>
@@ -254,13 +288,13 @@
     <!-- Certifications Section -->
     <section id="certifications" class="portfolio section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Certifications & Training</h2>
+        <h2>Certifications &amp; Training</h2>
         <p>Achieved multiple industry-recognized certifications and completed intensive training programs.</p>
       </div>
 
       <div class="container" data-aos="fade-up">
         <div class="row gy-4">
-          
+
           <!-- Cert 1 -->
           <div class="col-lg-4 col-md-6">
             <div class="portfolio-item">
@@ -360,7 +394,7 @@
             </div>
           </div>
 
-          <!-- Cert 10: Digital Forensics Fundamentals (New) -->
+          <!-- Cert 10: Digital Forensics Fundamentals -->
           <div class="col-lg-4 col-md-6">
             <div class="portfolio-item">
               <img src="assets/img/certificates/certificate-1793625690443.jpg" class="img-fluid" alt="Digital Forensics Fundamentals">
@@ -397,7 +431,7 @@
               <img src="assets/img/masonry-portfolio/deepsec-dashboard.png" class="img-fluid" alt="DeepSec IPS" style="height:250px; object-fit:cover;">
               <div class="portfolio-info">
                 <h4>DeepSec - AI IPS</h4>
-                <p>Suricata & XGBoost ML Integration</p>
+                <p>Suricata &amp; XGBoost ML Integration</p>
                 <a href="portfolio-details-deepsec.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -429,8 +463,49 @@
                 <a href="portfolio-details plant shop.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
-            
+
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project (Challenge / Solution / Result) -->
+    <section id="featured-project" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Featured Project</h2>
+        <p>DeepSec – AI-Powered Intrusion Prevention System: How I integrated Suricata with Machine Learning to detect and block real-time attacks.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- Challenge -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-red position-relative">
+              <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
+              <h3>Challenge</h3>
+              <p>Traditional signature-based IPS systems fail to detect zero-day attacks and obfuscated malicious traffic. The goal was to build an intelligent system that can identify unknown threats in real time without overwhelming false positives.</p>
+            </div>
+          </div>
+
+          <!-- Solution -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon"><i class="fas fa-cogs"></i></div>
+              <h3>Solution</h3>
+              <p>Integrated Suricata with an XGBoost machine learning model trained on network flow features (e.g., packet size, duration, protocol). The model processes Suricata alerts and predicts whether a flow is malicious, significantly improving detection accuracy.</p>
+            </div>
+          </div>
+
+          <!-- Result -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <div class="icon"><i class="fas fa-check-circle"></i></div>
+              <h3>Result</h3>
+              <p>Achieved over 95% detection rate on test datasets with a 40% reduction in false positives compared to the standalone Suricata setup. The system now provides real-time blocking and actionable alerts through a custom dashboard.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -456,7 +531,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
               <div class="icon"><i class="fas fa-network-wired"></i></div>
-              <a href="#" class="stretched-link"><h3>SOC & Incident Response</h3></a>
+              <a href="#" class="stretched-link"><h3>SOC &amp; Incident Response</h3></a>
               <p>Security monitoring, alert triage, log analysis, and incident handling using SIEM and Suricata.</p>
             </div>
           </div>
@@ -532,7 +607,7 @@
       <h3 class="sitename">Zaid Roushdy Hegazy</h3>
       <p>Cybersecurity Engineer | Full Stack Developer</p>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/zaid-roushdy-hegazy-0b291529b" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/zaid-roushdy-hegazy-0b291529b/" target="_blank"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/zaidrhs" target="_blank"><i class="bi bi-github"></i></a>
         <a href="https://tryhackme.com/p/zaidrhs" target="_blank"><i class="fas fa-terminal"></i></a>
       </div>
